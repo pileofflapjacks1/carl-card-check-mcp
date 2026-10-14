@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Carl Card Check logo">
+  <rect width="512" height="512" rx="96" fill="#1E3A5F"/>
+  <rect x="120" y="88" width="208" height="296" rx="20" fill="#FFFFFF" fill-opacity="0.08" stroke="#F5C542" stroke-width="18"/>
+  <rect x="152" y="124" width="144" height="104" rx="8" fill="none" stroke="#F5C542" stroke-width="10" stroke-opacity="0.6"/>
+  <line x1="152" y1="262" x2="296" y2="262" stroke="#F5C542" stroke-width="10" stroke-linecap="round" stroke-opacity="0.6"/>
+  <line x1="152" y1="296" x2="252" y2="296" stroke="#F5C542" stroke-width="10" stroke-linecap="round" stroke-opacity="0.6"/>
+  <circle cx="318" cy="318" r="72" fill="#1E3A5F" fill-opacity="0.85" stroke="#FFFFFF" stroke-width="20"/>
+  <line x1="370" y1="370" x2="428" y2="428" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round"/>
+</svg>
