@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "carl-card-check": {
+      "type": "http",
+      "url": "https://carl-card-check-mcp.cardcaptain.workers.dev/mcp"
+    }
+  }
+}

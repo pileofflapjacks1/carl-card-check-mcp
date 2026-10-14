@@ -34,9 +34,28 @@ npm run stdio      # MCP over stdio (for local MCP clients)
 npx wrangler dev   # local streamable-HTTP endpoint at http://localhost:8787/mcp
 ```
 
-## Deploy to Cloudflare Workers (NOT done; for Joe)
-Nothing has been deployed and no Cloudflare account has been created.
-1. `npx wrangler login` (Cloudflare free plan: 100,000 requests/day).
+## Live endpoint
+`https://carl-card-check-mcp.cardcaptain.workers.dev/mcp` (streamable HTTP, no auth, no secrets). The server makes no outbound network calls.
+
+## Install as a plugin (Grok Bot / Grok Build / Cursor)
+This repo is a plugin: `.grok-plugin/plugin.json` and `.cursor-plugin/plugin.json` (manifests), `.mcp.json` / `mcp.json` (remote MCP), `assets/logo.svg`, and `skills/carl-card-check/SKILL.md`.
+- Install from the marketplace once listed (search "carl-card-check"), or point your client's plugin install at this repo.
+
+## Connect any MCP client directly
+```json
+{
+  "mcpServers": {
+    "carl-card-check": {
+      "type": "http",
+      "url": "https://carl-card-check-mcp.cardcaptain.workers.dev/mcp"
+    }
+  }
+}
+```
+Then ask your agent e.g. "Check this listing: PSA 10 Charizard Base Set 4/102, $150, pay by Zelle only."
+
+## Self-host on Cloudflare Workers
+1. `npx wrangler login` (free plan: 100,000 requests/day).
 2. `npx wrangler deploy`
 3. Point MCP clients at `https://carl-card-check-mcp.<your-subdomain>.workers.dev/mcp`.
 

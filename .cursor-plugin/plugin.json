@@ -1,0 +1,14 @@
+{
+  "name": "carl-card-check",
+  "version": "1.0.0",
+  "description": "Rule-based risk signals for trading-card (Pokémon-focused) listings via a hosted, no-auth MCP tool (check_listing): proxy/replica wording, off-platform payment, missing certs, and more, plus sold-comp search links. Informational only, not authentication or appraisal.",
+  "author": {
+    "name": "pileofflapjacks1 / CardCaptain",
+    "url": "https://github.com/pileofflapjacks1"
+  },
+  "homepage": "https://github.com/pileofflapjacks1/carl-card-check-mcp",
+  "repository": "https://github.com/pileofflapjacks1/carl-card-check-mcp",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "keywords": ["carl card check", "cardcaptain", "carl check_listing"]
+}
